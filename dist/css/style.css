@@ -1,0 +1,381 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+
+- Letter spacing
+-0.5px
+0.75px
+
+--- 02 COLORS
+
+- Primary: #e67e22
+- Tints:
+#fdf2e9
+#fae5d3
+#eb984e
+
+- Shades: 
+#cf711f
+#45260a
+
+- Accents:
+- Greys
+
+#888
+#767676 (lightest grey allowed on #fff)
+#6f6f6f (lightest grey allowed on #fdf2e9)
+#555
+#333
+
+--- 05 SHADOWS
+
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+--- 06 BORDER-RADIUS
+
+Default: 9px
+Medium: 11px
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+.header {
+  height: 9.6rem;
+  padding: 0 4.8rem 0 4.8rem;
+  background-color: #fdf2e9;
+}
+.header .header__logo .omnifood__logo {
+  height: 2.2rem;
+}
+.header .header__navigation .navbar {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  list-style: none;
+  font-size: 1.8rem;
+}
+.header .header__navigation .navbar a {
+  text-decoration: none;
+}
+.header .header__navigation .navbar .nav__link {
+  color: #333;
+  font-weight: 500;
+}
+
+.hero__section {
+  background-color: #fdf2e9;
+  padding: 3.2rem 4.8rem 9.6rem 4.8rem;
+}
+.hero__section .hero__container {
+  gap: 8rem;
+}
+.hero__section .hero__container .hero__content_box .hero__primary {
+  margin: 0rem 0rem 3.2rem 0rem;
+}
+.hero__section .hero__container .hero__content_box .hero__description {
+  margin: 0rem 0rem 3.2rem 0rem;
+}
+.hero__section .hero__container .hero__content_box .hero__button_box {
+  gap: 1.8rem;
+  margin: 0rem 0rem 6.4rem 0rem;
+}
+.hero__section .hero__container .hero__content_box .hero__customer_box {
+  gap: 3.2rem;
+}
+.hero__section .hero__container .hero__content_box .hero__customer_box .hero__customer_images {
+  display: inline-flex;
+}
+.hero__section .hero__container .hero__content_box .hero__customer_box .hero__customer_images .customer {
+  width: 4rem;
+  height: 4rem;
+  margin-right: -1.8rem;
+  border-radius: 100px;
+  border: 3px solid #fdf2e9;
+}
+.hero__section .hero__container .hero__content_box .hero__customer_box .highlighted__text {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.hero__section .hero__container .hero__content_box .hero__customer_box .highlighted__text span {
+  color: #e67e22;
+}
+.hero__section .hero__container .hero__image_box .hero__image {
+  width: 100%;
+  height: 100%;
+}
+
+.fearuted__container {
+  padding: 3.2rem 0rem 2.4rem 0rem;
+}
+.fearuted__container .featured__heading_section {
+  display: block;
+  margin: 0rem 0rem 2.4rem 0rem;
+}
+.fearuted__container .featured__logos {
+  padding: 0rem 4.8rem 0rem 4.8rem;
+  gap: 3.2rem;
+}
+.fearuted__container .featured__logos .logos {
+  height: 3rem;
+  filter: brightness(0);
+  opacity: 50%;
+}
+
+.how__to_section {
+  padding: 0rem 0rem 9.6rem 0rem;
+}
+.how__to_section .how__to_container {
+  padding: 0 4.8rem 0 4.8rem;
+}
+.how__to_section .how__to_container .how__to_heading {
+  margin: 9.4rem 0rem 8rem 0rem;
+}
+.how__to_section .how__to_container .how__to_heading .how__to_title {
+  text-align: left !important;
+  margin: 0rem 0rem 1.2rem 0rem;
+}
+.how__to_section .how__to_container .how__to_grid {
+  gap: 6.4rem;
+  align-items: center;
+}
+.how__to_section .how__to_container .how__to_grid .how__to_content_box .how__to_step {
+  margin: 0 0 1.2rem 0;
+}
+.how__to_section .how__to_container .how__to_grid .how__to_content_box .how__to_secondary_heading {
+  margin: 0 0 3.2rem 0rem;
+}
+.how__to_section .how__to_container .how__to_grid .how__to_image_box .screenshot {
+  width: 40%;
+}
+
+.meals__section .meals__container {
+  padding: 4.8rem;
+  margin: 0 auto;
+}
+.meals__section .meals__container .meals__heading .meals__featured_heading {
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+.meals__section .meals__container .meals__heading .meals__primary_heading {
+  margin-bottom: 6rem;
+  text-align: center;
+}
+.meals__section .meals__container .meals__grid {
+  gap: 4.8rem;
+}
+.meals__section .meals__container .meals__grid .meals__card {
+  background-color: #fdf2e9;
+  border-radius: 9px;
+}
+.meals__section .meals__container .meals__grid .meals__card .meals__img {
+  width: 100%;
+  border-radius: 9px 9px 0 0;
+}
+.meals__section .meals__container .meals__grid .meals__card .meals__card_content_box {
+  padding: 3.2rem 2.4rem;
+}
+.meals__section .meals__container .meals__grid .meals__card .meals__card_content_box .meals__tag {
+  margin-bottom: 1.2rem;
+}
+.meals__section .meals__container .meals__grid .meals__card .meals__card_content_box .meals__name {
+  margin-bottom: 1.8rem;
+}
+.meals__section .meals__container .meals__grid .meals__card .meals__card_content_box .meals__info {
+  gap: 1.2rem;
+}
+.meals__section .meals__container .meals__grid .meals__card .meals__card_content_box .meals__info .meals__info_list {
+  font-size: 1.8rem;
+  gap: 0.8rem;
+}
+.meals__section .meals__container .meals__grid .meals__list_card .meals__list_heading {
+  margin-bottom: 4.8rem;
+}
+.meals__section .meals__container .meals__grid .meals__list_card .meals__list_items {
+  font-size: 1.8rem;
+}
+.meals__section .meals__container .meals__grid .meals__list_card .meals__list_items .meals__list {
+  gap: 1.8rem;
+}
+.meals__section .meals__container .meals__grid .meals__list_card .meals__list_items .meals__list .meals__item {
+  gap: 0.8rem;
+}
+.meals__section .meals__see_all {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 4.8rem;
+}
+
+.food__gal_section {
+  background-color: #fdf2e9;
+}
+.food__gal_section .food__gal_container {
+  gap: 9.8rem;
+  padding: 4.8rem;
+  margin: 0 auto;
+}
+.food__gal_section .food__gal_container .food__testimonials .food__testimonial_sub_heading {
+  text-align: left;
+  margin-bottom: 1.2rem;
+}
+.food__gal_section .food__gal_container .food__testimonials .food__testimonial_heading {
+  margin-bottom: 4.8rem;
+}
+.food__gal_section .food__gal_container .food__testimonials .food__testimonials_grid {
+  gap: 6.8rem;
+}
+.food__gal_section .food__gal_container .food__testimonials .food__testimonials_grid .food__customer_testimonial img {
+  width: 6.8rem;
+  border-radius: 50%;
+  margin-bottom: 1.8rem;
+}
+.food__gal_section .food__gal_container .food__gallary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.4rem;
+}
+.food__gal_section .food__gal_container .food__gallary .food__img img {
+  display: block;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.space-btwn {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.space-evenly {
+  justify-content: space-between;
+}
+
+.flex_column {
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+}
+
+.columns_two {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.columns_three {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.button {
+  background-color: #e67e22;
+  color: #fdf2e9;
+  font-weight: 700;
+  padding: 1.2rem 1.6rem;
+  border-radius: 9px;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.primary_heading {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: #333;
+  line-height: 1;
+}
+
+.description {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: #555;
+  font-weight: 400;
+}
+
+.sub__heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+.step {
+  font-size: 4.4rem;
+  font-weight: 700;
+}
+
+.secondary {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #333;
+  border-radius: 100px;
+  font-weight: 600;
+  background-color: greenyellow;
+}
+
+.tritary {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.quote {
+  font-size: 1.8rem;
+  line-height: 1.3;
+  margin-bottom: 1.8rem;
+}
+
+.authour {
+  font-size: 1.6rem;
+}/*# sourceMappingURL=style.css.map */
